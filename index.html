@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Verbo 'To Be' en Inglés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: white; /* Texto blanco */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            background-image: url('https://i.ibb.co/WWZfW4D/CLASE-MUESTRA-5.png'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-size: 48px;
+            text-align: center;
+            padding: 50px;
+            border-radius: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            color: #f0f0f0; /* Color de subtítulos */
+        }
+        .menu {
+            background-color: #444;
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu ul li {
+            margin: 0;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .menu ul li a:hover {
+            color: #ff6347;
+        }
+        section {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 16px;
+        }
+        ul {
+            font-size: 16px;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>El Verbo 'To Be' en Inglés</h1>
+
+<div class="menu">
+    <ul>
+        <li><a href="#whatIs">¿Qué es el verbo 'to be'?</a></li>
+        <li><a href="#usage">Uso del Verbo 'To Be'</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <section id="whatIs">
+        <h2>¿Qué es el verbo 'to be'?</h2>
+        <p>El verbo 'to be' es uno de los verbos más importantes en inglés. Se utiliza para describir el estado o la existencia de algo. Aquí están sus formas:</p>
+        <ul>
+            <li><strong>I am</strong> - Yo soy / estoy</li>
+            <li><strong>You are</strong> - Tú eres / estás</li>
+            <li><strong>He is</strong> - Él es / está</li>
+            <li><strong>She is</strong> - Ella es / está</li>
+            <li><strong>It is</strong> - Eso es / está</li>
+            <li><strong>We are</strong> - Nosotros / Nosotras somos / estamos</li>
+            <li><strong>They are</strong> - Ellos / Ellas son / están</li>
+        </ul>
+        <p>Usamos el verbo 'to be' para hablar de nosotros mismos y de otras personas o cosas.</p>
+    </section>
+
+    <section id="usage">
+        <h2>Uso del Verbo 'To Be'</h2>
+        <p>El verbo 'to be' se usa en diferentes contextos. Aquí hay algunos ejemplos:</p>
+        <ul>
+            <li><strong>I am happy.</strong> (Yo estoy feliz.)</li>
+            <li><strong>She is a teacher.</strong> (Ella es maestra.)</li>
+            <li><strong>They are friends.</strong> (Ellos son amigos.)</li>
+        </ul>
+    </section>
+
+    <div class="video-container">
+        <h2>Video Explicativo</h2>
+        <iframe src="https://www.youtube.com/embed/0ClPoYM6jak" allowfullscreen></iframe>
+    </div>
+</div>
+
+<button id="scrollToTopBtn">Volver al Inicio</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        var menuLinks = document.querySelectorAll('.menu li a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
